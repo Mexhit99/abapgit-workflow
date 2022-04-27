@@ -524,75 +524,85 @@
        <LINE>* MODULE STATUS_0101.</LINE>
       </RPY_DYFLOW>
       <RPY_DYFLOW>
+       <LINE>**</LINE>
+      </RPY_DYFLOW>
+      <RPY_DYFLOW>
+       <LINE>*  MODULE chkitab.</LINE>
+      </RPY_DYFLOW>
+      <RPY_DYFLOW>
+       <LINE>*  LOOP AT itab WITH CONTROL tab1.</LINE>
+      </RPY_DYFLOW>
+      <RPY_DYFLOW>
+       <LINE>*    MODULE display_data.</LINE>
+      </RPY_DYFLOW>
+      <RPY_DYFLOW>
+       <LINE>*  ENDLOOP.</LINE>
+      </RPY_DYFLOW>
+      <RPY_DYFLOW>
        <LINE>*</LINE>
       </RPY_DYFLOW>
       <RPY_DYFLOW>
-       <LINE>  MODULE chkitab.</LINE>
+       <LINE>*PROCESS AFTER INPUT.</LINE>
       </RPY_DYFLOW>
       <RPY_DYFLOW>
-       <LINE>  LOOP AT itab WITH CONTROL tab1.</LINE>
+       <LINE>** MODULE USER_COMMAND_0101.</LINE>
       </RPY_DYFLOW>
       <RPY_DYFLOW>
-       <LINE>    MODULE display_data.</LINE>
+       <LINE>*</LINE>
       </RPY_DYFLOW>
       <RPY_DYFLOW>
-       <LINE>  ENDLOOP.</LINE>
-      </RPY_DYFLOW>
-      <RPY_DYFLOW/>
-      <RPY_DYFLOW>
-       <LINE>PROCESS AFTER INPUT.</LINE>
+       <LINE>*  MODULE load_itab.</LINE>
       </RPY_DYFLOW>
       <RPY_DYFLOW>
-       <LINE>* MODULE USER_COMMAND_0101.</LINE>
-      </RPY_DYFLOW>
-      <RPY_DYFLOW/>
-      <RPY_DYFLOW>
-       <LINE>  MODULE load_itab.</LINE>
+       <LINE>*  LOOP AT itab.</LINE>
       </RPY_DYFLOW>
       <RPY_DYFLOW>
-       <LINE>  LOOP AT itab.</LINE>
+       <LINE>*  ENDLOOP.</LINE>
       </RPY_DYFLOW>
       <RPY_DYFLOW>
-       <LINE>  ENDLOOP.</LINE>
-      </RPY_DYFLOW>
-      <RPY_DYFLOW/>
-      <RPY_DYFLOW>
-       <LINE>  MODULE checkitab.</LINE>
+       <LINE>*</LINE>
       </RPY_DYFLOW>
       <RPY_DYFLOW>
-       <LINE>  IF v_flag NE 1.</LINE>
+       <LINE>*  MODULE checkitab.</LINE>
       </RPY_DYFLOW>
       <RPY_DYFLOW>
-       <LINE>    CLEAR itab.</LINE>
+       <LINE>*  IF v_flag NE 1.</LINE>
       </RPY_DYFLOW>
       <RPY_DYFLOW>
-       <LINE>    REFRESH itab[].</LINE>
+       <LINE>*    CLEAR itab.</LINE>
       </RPY_DYFLOW>
       <RPY_DYFLOW>
-       <LINE>  ENDIF.</LINE>
-      </RPY_DYFLOW>
-      <RPY_DYFLOW/>
-      <RPY_DYFLOW>
-       <LINE>  MODULE load_itab.</LINE>
+       <LINE>*    REFRESH itab[].</LINE>
       </RPY_DYFLOW>
       <RPY_DYFLOW>
-       <LINE>* load data from table into itab based on selection from list box.</LINE>
+       <LINE>*  ENDIF.</LINE>
       </RPY_DYFLOW>
       <RPY_DYFLOW>
-       <LINE>  v_flag = 1.  &quot;set a flag after loading ur itab.</LINE>
-      </RPY_DYFLOW>
-      <RPY_DYFLOW/>
-      <RPY_DYFLOW>
-       <LINE>  MODULE display_data.</LINE>
+       <LINE>*</LINE>
       </RPY_DYFLOW>
       <RPY_DYFLOW>
-       <LINE>  MOVE itab TO zplayer_table.</LINE>
+       <LINE>*  MODULE load_itab.</LINE>
       </RPY_DYFLOW>
       <RPY_DYFLOW>
-       <LINE>  DATA: itab TYPE TABLE OF dbtable.       &quot;ur db table</LINE>
+       <LINE>** load data from table into itab based on selection from list box.</LINE>
       </RPY_DYFLOW>
       <RPY_DYFLOW>
-       <LINE>  CONTROLS tab1 TYPE TABLEVIEW USING SCREEN 0101.</LINE>
+       <LINE>*  v_flag = 1.  &quot;set a flag after loading ur itab.</LINE>
+      </RPY_DYFLOW>
+      <RPY_DYFLOW>
+       <LINE>*</LINE>
+      </RPY_DYFLOW>
+      <RPY_DYFLOW>
+       <LINE>*  MODULE display_data.</LINE>
+      </RPY_DYFLOW>
+      <RPY_DYFLOW>
+       <LINE>*  MOVE itab TO zplayer_table.</LINE>
+      </RPY_DYFLOW>
+      <RPY_DYFLOW>
+       <LINE>*  DATA: itab TYPE TABLE OF dbtable.       &quot;ur db table</LINE>
+      </RPY_DYFLOW>
+      <RPY_DYFLOW>
+       <LINE>*  CONTROLS tab1 TYPE TABLEVIEW USING SCREEN 0101.</LINE>
       </RPY_DYFLOW>
      </FLOW_LOGIC>
     </item>

@@ -23,6 +23,7 @@ TYPE-POOLS: slis.
 *&---------------------------------------------------------------------*
 MODULE status_0100 OUTPUT.
   SET PF-STATUS '0100'.
+  SET TITLEBAR '0100'.
 
   IF a1 IS INITIAL AND a2 IS INITIAL AND a3 IS INITIAL AND a4 IS INITIAL.
     a1 = 'X'.
@@ -40,7 +41,7 @@ MODULE status_0100 OUTPUT.
   ENDIF.
 
 
-  SET TITLEBAR '0100'.
+
 ENDMODULE.
 
 
